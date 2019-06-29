@@ -16,7 +16,8 @@ public class Runner implements CommandLineRunner {
     private PropertyExample secondProperty;
 
     @Autowired
-    public Runner(final PropertyExample firstProperty, PropertyExample secondProperty) {
+    public Runner(/*@Validated*/ /*@Valid*/ final PropertyExample firstProperty,
+            /*@Validated*/ /*@Valid*/ PropertyExample secondProperty) {
         this.firstProperty = firstProperty;
         this.secondProperty = secondProperty;
     }
